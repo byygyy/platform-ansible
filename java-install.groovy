@@ -8,8 +8,9 @@ node("cm-linux-ansible") {
 
     stage('Build'){
       echo 'I am start to do the build'
+      git 'https://github.com/byygyy/platform-ansible.git'
       sh '''
-         ansible gcp -m ping
+         ansible-playbook -i 'gcp.lhh.pub' ./platform-ansible/java-install.yml
          '''
     }
 }
