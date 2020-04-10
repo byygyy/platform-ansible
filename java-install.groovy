@@ -8,5 +8,8 @@ node("cm-linux-ansible") {
 
     stage('Build'){
       echo 'I am start to do the build'
+      sh '''
+         ansible all -m ping
+         '''
     }
 }
