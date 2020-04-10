@@ -1,4 +1,4 @@
-node("cm-linux") {
+node("cm-linux-ansible") {
       properties([
           parameters([
             string(name:'NODENAME', defaultValue:'cm-linux', description:'input the node name'),
@@ -7,6 +7,6 @@ node("cm-linux") {
     ])
 
     stage('Build'){
-      echo 'I am doing the Test'
+      echo 'I am start to do the build'
     }
 }
