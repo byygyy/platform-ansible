@@ -10,7 +10,7 @@ node("cm-linux-ansible") {
       echo 'I am start to do the build'
       git 'https://github.com/byygyy/platform-ansible.git'
       sh '''
-         ansible-playbook -i 'gcp.lhh.pub' java-install.yml
+         ansible-playbook -i 'gcp.lhh.pub,' java-install.yml
          '''
     }
 }
