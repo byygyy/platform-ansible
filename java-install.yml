@@ -11,7 +11,7 @@
     hosts_group: all
 
   tasks:
-    - name: pip insall web.py
+    - name: install openjdk by yum
       shell: "echo y|yum install java"
       async: 20
       poll: 10
